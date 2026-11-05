@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arduino & Robótica | Laboratório Criativo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <a class="marca" href="#">⚡ RoboLab</a>
+    <nav><a href="#sobre">Sobre</a><a href="#projetos">Projetos</a><a href="#contato">Contato</a></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div>
+        <span class="tag">APRENDA • CRIE • TESTE</span>
+        <h1>Ideias que ganham<br><em>vida com tecnologia.</em></h1>
+        <p>Explore Arduino e robótica construindo projetos, entendendo sensores e programando soluções para o mundo real.</p>
+        <a class="botao" href="#projetos">Conheça os projetos <span>↗</span></a>
+      </div>
+      <div class="orb" aria-label="Ilustração de circuito"><div class="chip">ARDUINO<br><b>UNO</b></div><i class="node n1"></i><i class="node n2"></i><i class="node n3"></i></div>
+    </section>
+    <section id="sobre" class="sobre">
+      <h2>Do primeiro circuito ao seu primeiro robô</h2>
+      <p>O Arduino é uma plataforma de prototipagem que combina uma placa eletrônica com programação. Com ele, podemos controlar LEDs, ler sensores e criar mecanismos interativos.</p>
+    </section>
+    <section id="projetos" class="projetos">
+      <h2>Projetos para começar</h2>
+      <div class="cards">
+        <article><div class="emoji">💡</div><h3>LED piscante</h3><p>Aprenda saídas digitais e temporização com um LED.</p></article>
+        <article><div class="emoji">🚦</div><h3>Semáforo</h3><p>Simule o funcionamento de um semáforo com três LEDs.</p></article>
+        <article><div class="emoji">🤖</div><h3>Robô desvia-obstáculos</h3><p>Use sensores para detectar objetos e mudar de direção.</p></article>
+      </div>
+    </section>
+    <section id="contato" class="contato">
+      <div><h2>Vamos montar algo?</h2><p>Envie sua ideia para o laboratório.</p></div>
+      <form id="formIdeia">
+        <label for="nome">Seu nome</label><input id="nome" name="nome" required placeholder="Como podemos chamar você?">
+        <label for="ideia">Sua ideia de projeto</label><textarea id="ideia" name="ideia" required rows="3" placeholder="Conte um pouco sobre sua ideia..."></textarea>
+        <button type="submit">Enviar ideia</button><p id="retorno" role="status"></p>
+      </form>
+    </section>
+  </main>
+  <footer>© 2026 RoboLab • Aprender fazendo.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
